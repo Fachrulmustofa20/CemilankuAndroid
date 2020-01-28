@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".CheckoutActivity">
+
+    <TextView
+        android:id="@+id/checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/pembeli"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/checkout"
+        android:text="Customer Name :"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/pembeli"
+        android:layout_below="@id/checkout"
+        android:textSize="18sp"
+        android:text="Fachrul"/>
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/pembeli"
+        android:text="Time :"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/waktu"
+        android:layout_below="@id/name"
+        android:textSize="18sp"
+        android:text="waktu"/>
+
+    <TextView
+        android:id="@+id/Transaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/waktu"
+        android:text="Total Transaksi"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:id="@+id/tampung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Transaksi"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/Rp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. "
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="0"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/jumlahpemb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/tampung"
+        android:text="Jumlah Pembayaran"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jumlahpemb"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/sisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/jumlah"
+        android:text="Kembali"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:id="@+id/tampung1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sisa"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/Rp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. "
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/kembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="0"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:text="Bayar"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_rectangle_button" />
+
+</RelativeLayout>
